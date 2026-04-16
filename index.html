@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- htmlaunch:enhanced:v2 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(141%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(171%2C72%25%2C44%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2246%22%20text-anchor%3D%22middle%22%20font-family%3D%22ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EH%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta name="theme-color" content="#7b145f">
+<meta name="description" content="Haleon PLC — Investment Analysis | deployed with HTMLaunch">
+<link rel="canonical" href="https://raminagalimzhanova18.github.io/haleon-plc-investment-analysis/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Haleon PLC — Investment Analysis">
+<meta property="og:title" content="Haleon PLC — Investment Analysis">
+<meta property="og:description" content="Haleon PLC — Investment Analysis | deployed with HTMLaunch">
+<meta property="og:url" content="https://raminagalimzhanova18.github.io/haleon-plc-investment-analysis/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Framinagalimzhanova18.github.io%2Fhaleon-plc-investment-analysis%2F?w=1200&h=630">
+<meta property="og:image:alt" content="Haleon PLC — Investment Analysis">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Haleon PLC — Investment Analysis">
+<meta name="twitter:description" content="Haleon PLC — Investment Analysis | deployed with HTMLaunch">
+<meta name="twitter:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Framinagalimzhanova18.github.io%2Fhaleon-plc-investment-analysis%2F?w=1200&h=630">
+<meta name="twitter:image:alt" content="Haleon PLC — Investment Analysis">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haleon PLC — Investment Analysis</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1A2E4A;
+    --navy-mid: #2D4A6A;
+    --blue: #3A6EA5;
+    --blue-light: #5B8DC4;
+    --green: #1B5E20;
+    --green-light: #2E7D32;
+    --amber: #C8892A;
+    --red: #B5382A;
+    --bg: #F4F6F9;
+    --bg-card: #FFFFFF;
+    --text: #1A2332;
+    --text-mid: #4A5568;
+    --text-light: #718096;
+    --border: #E2E8F0;
+    --border-strong: #CBD5E0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--navy);
+    padding: 0 40px;
+    height: 56px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 3px solid var(--blue);
+  }
+  .nav-brand {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; font-weight: 500;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .nav-brand span { color: #fff; }
+  .nav-links {
+    display: flex; gap: 28px; list-style: none;
+  }
+  .nav-links a {
+    font-size: 12px; font-weight: 500;
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: #fff; }
+  .nav-rec {
+    background: var(--amber);
+    color: #fff;
+    font-size: 10px; font-weight: 600;
+    letter-spacing: 0.1em;
+    padding: 4px 12px;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+
+  /* HERO */
+  .hero {
+    margin-top: 56px;
+    background: var(--navy);
+    padding: 64px 40px 56px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top: 0; left: 0;
+    width: 6px; height: 100%;
+    background: var(--blue);
+  }
+  .hero-inner { max-width: 1100px; margin: 0 auto; }
+  .hero-ticker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; font-weight: 500;
+    color: var(--blue-light);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px; font-weight: 700;
+    color: #fff;
+    line-height: 1.05;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+  .hero-thesis {
+    font-size: 16px;
+    color: rgba(255,255,255,0.65);
+    max-width: 680px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 860px;
+  }
+  .hero-stat {
+    background: rgba(255,255,255,0.04);
+    padding: 20px 20px 16px;
+    transition: background 0.2s;
+  }
+  .hero-stat:hover { background: rgba(255,255,255,0.08); }
+  .hero-stat-label {
+    font-size: 10px; font-weight: 500;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .hero-stat-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px; font-weight: 500;
+    color: #fff;
+    line-height: 1;
+  }
+  .hero-stat-sub {
+    font-size: 10px;
+    color: rgba(255,255,255,0.35);
+    margin-top: 4px;
+  }
+  .hero-rec-bar {
+    margin-top: 32px;
+    background: rgba(200,137,42,0.12);
+    border: 1px solid rgba(200,137,42,0.3);
+    border-left: 4px solid var(--amber);
+    padding: 14px 20px;
+    border-radius: 0 4px 4px 0;
+    max-width: 860px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  .hero-rec-bar strong { color: var(--amber); }
+
+  /* SECTIONS */
+  section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 40px;
+  }
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; font-weight: 500;
+    color: var(--blue);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px; font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+  .section-subtitle {
+    font-size: 14px;
+    color: var(--text-mid);
+    margin-bottom: 36px;
+    font-weight: 300;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0;
+  }
+
+  /* EXEC SUMMARY CARDS */
+  .exec-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+  .exec-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--navy);
+    padding: 20px;
+    border-radius: 2px;
+  }
+  .exec-card-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px; font-weight: 700;
+    color: var(--navy);
+    opacity: 0.12;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .exec-card-title {
+    font-size: 13px; font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .exec-card-body {
+    font-size: 12px;
+    color: var(--text-mid);
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  .valuation-strip {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .val-cell {
+    background: var(--bg-card);
+    padding: 16px 14px;
+    text-align: center;
+  }
+  .val-cell-label {
+    font-size: 10px;
+    color: var(--text-light);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .val-cell-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px; font-weight: 500;
+    line-height: 1;
+  }
+  .val-cell-value.negative { color: var(--red); }
+  .val-cell-value.positive { color: var(--green-light); }
+  .val-cell-value.neutral { color: var(--navy); }
+  .val-cell-sub {
+    font-size: 10px;
+    color: var(--text-light);
+    margin-top: 4px;
+  }
+
+  /* THESIS */
+  .thesis-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .thesis-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .thesis-card-header {
+    background: var(--navy);
+    padding: 14px 18px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .thesis-card-header.resolved { background: var(--green); }
+  .thesis-card-title {
+    font-size: 13px; font-weight: 600;
+    color: #fff;
+    line-height: 1.2;
+  }
+  .thesis-badge {
+    font-size: 9px; font-weight: 600;
+    letter-spacing: 0.1em;
+    padding: 3px 8px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+  .thesis-badge.resolved-badge {
+    background: rgba(255,255,255,0.25);
+  }
+  .thesis-card-body {
+    padding: 16px 18px;
+  }
+  .thesis-problem {
+    font-size: 12px;
+    color: var(--text-mid);
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .thesis-resolution {
+    font-size: 12px;
+    color: var(--green);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  .thesis-footer {
+    margin-top: 28px;
+    background: var(--navy);
+    padding: 18px 22px;
+    border-radius: 2px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+  }
+  .thesis-footer strong { color: #fff; }
+
+  /* COMPANY OVERVIEW */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .kpi-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--blue);
+    padding: 18px 20px;
+    border-radius: 0 2px 2px 0;
+  }
+  .kpi-label {
+    font-size: 11px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .kpi-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 26px; font-weight: 500;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .kpi-sub {
+    font-size: 11px;
+    color: var(--text-light);
+    font-weight: 300;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  thead th {
+    background: var(--navy);
+    color: #fff;
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  tbody tr { background: var(--bg-card); }
+  tbody tr:nth-child(even) { background: #F8FAFC; }
+  tbody tr:hover { background: #EEF2FF; }
+  tbody td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    font-weight: 400;
+  }
+  .td-green { color: var(--green-light); font-weight: 600; }
+  .td-red { color: var(--red); font-weight: 600; }
+  .td-mono { font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
+  .td-bold { font-weight: 600; }
+
+  /* FINANCIALS */
+  .chart-placeholder {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .chart-header {
+    background: var(--navy);
+    padding: 12px 18px;
+    font-size: 11px; font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .chart-inner { padding: 20px; }
+
+  .bar-chart {
+    display: flex; align-items: flex-end;
+    gap: 8px; height: 140px;
+    padding: 0 4px;
+  }
+  .bar-group { display: flex; flex-direction: column; align-items: center; flex: 1; }
+  .bar {
+    width: 100%;
+    background: var(--blue);
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    min-height: 4px;
+    transition: opacity 0.2s;
+  }
+  .bar:hover { opacity: 0.8; }
+  .bar.projected { background: var(--blue-light); opacity: 0.7; }
+  .bar-label {
+    font-size: 10px;
+    color: var(--text-light);
+    margin-top: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .bar-value {
+    position: absolute; top: -18px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 9px;
+    color: var(--text-mid);
+    font-family: 'IBM Plex Mono', monospace;
+    white-space: nowrap;
+  }
+
+  .deleverage-chart {
+    display: flex; align-items: flex-end;
+    gap: 8px; height: 120px;
+    padding: 0 4px;
+  }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+  /* PROJECTIONS TABLE */
+  .proj-table thead th { background: var(--navy-mid); }
+  .proj-table .highlight-col { background: rgba(58,110,165,0.06); }
+
+  /* COMPS */
+  .comps-wrapper { overflow-x: auto; }
+  .haleon-row td { font-weight: 600; background: #EEF4FF !important; }
+
+  /* EARNINGS DRIVERS */
+  .drivers-bridge {
+    display: flex; align-items: center;
+    gap: 12px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 18px 24px;
+    border-radius: 2px;
+    margin-bottom: 24px;
+  }
+  .bridge-box {
+    padding: 10px 18px;
+    border-radius: 2px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px; font-weight: 500;
+    color: #fff;
+  }
+  .bridge-box.start { background: var(--navy); }
+  .bridge-box.delta { background: var(--green); }
+  .bridge-box.end { background: var(--blue); }
+  .bridge-arrow {
+    font-size: 20px;
+    color: var(--text-light);
+  }
+
+  .driver-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .driver-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .driver-card.primary { border-color: var(--navy); border-width: 2px; }
+  .driver-card-header {
+    background: var(--navy);
+    padding: 12px 18px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .driver-card.secondary .driver-card-header { background: var(--blue); }
+  .driver-card-title {
+    font-size: 13px; font-weight: 600;
+    color: #fff;
+  }
+  .driver-primary-badge {
+    font-size: 9px; font-weight: 600;
+    background: var(--amber);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .driver-card-body {
+    padding: 16px 18px;
+  }
+  .driver-card-body ul {
+    list-style: none;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .driver-card-body li {
+    font-size: 12px;
+    color: var(--text-mid);
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  .driver-card-body li::before {
+    content: '';
+    position: absolute; left: 0; top: 8px;
+    width: 5px; height: 5px;
+    background: var(--blue);
+    border-radius: 50%;
+  }
+
+  /* FOOTBALL FIELD */
+  .ff-table tbody td:nth-child(2),
+  .ff-table tbody td:nth-child(3) {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+  }
+  .ff-target td { background: rgba(26,46,74,0.06) !important; font-weight: 700 !important; }
+
+  /* LBO */
+  .lbo-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+  }
+  .lbo-summary {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .lbo-summary-header {
+    background: var(--navy);
+    padding: 12px 16px;
+    font-size: 11px; font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .lbo-summary-row {
+    display: flex; justify-content: space-between;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .lbo-summary-row:last-child { border-bottom: none; }
+  .lbo-summary-key { color: var(--text-mid); font-weight: 400; }
+  .lbo-summary-val { font-family: 'IBM Plex Mono', monospace; font-weight: 500; color: var(--navy); }
+
+  .scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .scenario-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .scenario-header {
+    padding: 12px 16px;
+    font-size: 12px; font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .scenario-header.bear { background: var(--red); }
+  .scenario-header.base { background: var(--navy); }
+  .scenario-header.bull { background: var(--green); }
+  .scenario-body { padding: 14px 16px; }
+  .scenario-row {
+    display: flex; justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+  }
+  .scenario-row:last-child { border-bottom: none; padding-top: 10px; margin-top: 4px; }
+  .scenario-key { color: var(--text-mid); }
+  .scenario-val { font-family: 'IBM Plex Mono', monospace; font-weight: 500; }
+  .scenario-val.red { color: var(--red); }
+  .scenario-val.green { color: var(--green-light); }
+
+  /* RISKS */
+  .risk-table thead th:nth-child(2) { width: 60px; text-align: center; }
+  .risk-badge {
+    display: inline-block;
+    font-size: 9px; font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 2px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .risk-badge.med { background: #FEF3C7; color: #92400E; }
+  .risk-badge.low { background: #D1FAE5; color: #065F46; }
+
+  /* CONCLUSION */
+  .conclusion-section {
+    background: var(--navy);
+    padding: 56px 40px;
+  }
+  .conclusion-inner { max-width: 1100px; margin: 0 auto; }
+  .conclusion-rec {
+    background: rgba(200,137,42,0.15);
+    border: 1px solid rgba(200,137,42,0.3);
+    border-left: 4px solid var(--amber);
+    padding: 16px 22px;
+    border-radius: 0 4px 4px 0;
+    font-size: 14px; font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 36px;
+    letter-spacing: 0.01em;
+  }
+  .conclusion-rec strong { color: var(--amber); }
+  .conclusion-pillars {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  .pillar {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 18px 16px;
+    border-radius: 2px;
+    transition: background 0.2s;
+  }
+  .pillar:hover { background: rgba(255,255,255,0.09); }
+  .pillar-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: rgba(255,255,255,0.12);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .pillar-title {
+    font-size: 12px; font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .pillar-body {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #0F1E30;
+    padding: 24px 40px;
+    text-align: center;
+    font-size: 11px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.06em;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-inner > * {
+    animation: fadeUp 0.5s ease forwards;
+  }
+  .hero-ticker { animation-delay: 0.05s; }
+  .hero h1 { animation-delay: 0.12s; }
+  .hero-thesis { animation-delay: 0.2s; }
+  .hero-stats { animation-delay: 0.28s; }
+  .hero-rec-bar { animation-delay: 0.35s; }
+
+  @media (max-width: 900px) {
+    .hero-stats { grid-template-columns: repeat(3, 1fr); }
+    .exec-grid { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row { grid-template-columns: repeat(2, 1fr); }
+    .two-col, .driver-cards { grid-template-columns: 1fr; }
+    .conclusion-pillars { grid-template-columns: repeat(2, 1fr); }
+    .scenario-grid { grid-template-columns: 1fr; }
+    .lbo-grid { grid-template-columns: 1fr; }
+    nav .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand"><span>Haleon PLC</span> &nbsp;|&nbsp; LON: HLN</div>
+  <ul class="nav-links">
+    <li><a href="#thesis">Thesis</a></li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#financials">Financials</a></li>
+    <li><a href="#comps">Comps</a></li>
+    <li><a href="#drivers">Drivers</a></li>
+    <li><a href="#valuation">Valuation</a></li>
+    <li><a href="#risks">Risks</a></li>
+  </ul>
+  <div class="nav-rec">Forward Earnings Mispricing</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-ticker">April 2026 &nbsp;|&nbsp; For Discussion Purposes Only</div>
+    <h1>Haleon PLC</h1>
+    <p class="hero-thesis">Fairly valued on depressed FY2025 earnings. Applying today's peer median multiple to FY2027E EBITDA implies 456p — 25% upside with no multiple expansion assumed.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-label">Current Price</div>
+        <div class="hero-stat-value">365p</div>
+        <div class="hero-stat-sub">52-wk: 274–420p</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-label">Price Target</div>
+        <div class="hero-stat-value">440–460p</div>
+        <div class="hero-stat-sub">20–25% upside</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-label">Market Cap</div>
+        <div class="hero-stat-value">£32.6bn</div>
+        <div class="hero-stat-sub">EV ~£39.9bn</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-label">EV/EBITDA LTM</div>
+        <div class="hero-stat-value">14.0x</div>
+        <div class="hero-stat-sub">Peer median: 13.7x</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-label">ND/EBITDA</div>
+        <div class="hero-stat-value">2.6x</div>
+        <div class="hero-stat-sub">Down from 4.0x at listing</div>
+      </div>
+    </div>
+    <div class="hero-rec-bar">
+      <strong>RECOMMENDATION: FORWARD EARNINGS MISPRICING</strong> &nbsp;|&nbsp; Target: 440–460p &nbsp;|&nbsp; LBO floor: 474p (30% premium)
+    </div>
+  </div>
+</div>
+
+<!-- EXEC SUMMARY -->
+<section id="exec">
+  <div class="section-label">Section 01</div>
+  <h2 class="section-title">Executive Summary</h2>
+  <p class="section-subtitle">Four pillars supporting the investment case</p>
+  <div class="exec-grid">
+    <div class="exec-card">
+      <div class="exec-card-num">01</div>
+      <div class="exec-card-title">Quality business: three overhangs obscured fundamentals</div>
+      <div class="exec-card-body">Sensodyne, Centrum, Panadol: #1/#2 globally. The business generated £1.5bn+ FCF from listing day. Demerger debt, GSK/Pfizer overhang, and Zantac litigation obscured fundamentals. All three are now materially resolved.</div>
+    </div>
+    <div class="exec-card">
+      <div class="exec-card-num">02</div>
+      <div class="exec-card-title">Margin expansion is in the data, not the forecast</div>
+      <div class="exec-card-body">Cost of sales fell £605m over FY2023–2025 while revenue fell only £272m. Gross margin +350bps in FY2025 alone. £800m supply chain programme tracking ahead of plan.</div>
+    </div>
+    <div class="exec-card">
+      <div class="exec-card-num">03</div>
+      <div class="exec-card-title">Growth re-acceleration is the consensus miss</div>
+      <div class="exec-card-body">FY2025 3% organic was cyclical. Pre-results consensus stood at 4.4% for FY2026; management guided below. CEO confirmed FY2027 recovery to 4–6% (Feb 2026). Not priced in at current levels.</div>
+    </div>
+    <div class="exec-card">
+      <div class="exec-card-num">04</div>
+      <div class="exec-card-title">Acquisition optionality provides a valuation floor</div>
+      <div class="exec-card-body">Spot EV ~£40bn. A strategic acquirer with synergies generates 15–20%+ IRR at 474.5p. Even a financial sponsor produces a positive base case return, confirming the stock is not expensively priced.</div>
+    </div>
+  </div>
+  <div class="valuation-strip">
+    <div class="val-cell">
+      <div class="val-cell-label">Bear IRR (LBO)</div>
+      <div class="val-cell-value negative">(15%)</div>
+      <div class="val-cell-sub">0.45x MoM</div>
+    </div>
+    <div class="val-cell">
+      <div class="val-cell-label">Base IRR (LBO)</div>
+      <div class="val-cell-value neutral">5%</div>
+      <div class="val-cell-sub">1.28x MoM</div>
+    </div>
+    <div class="val-cell">
+      <div class="val-cell-label">Bull IRR (LBO)</div>
+      <div class="val-cell-value positive">18%</div>
+      <div class="val-cell-sub">2.30x MoM</div>
+    </div>
+    <div class="val-cell">
+      <div class="val-cell-label">DCF Base</div>
+      <div class="val-cell-value neutral">326p</div>
+      <div class="val-cell-sub">Conservative standalone*</div>
+    </div>
+    <div class="val-cell">
+      <div class="val-cell-label">Comps Target</div>
+      <div class="val-cell-value positive">456p</div>
+      <div class="val-cell-sub">Fwd 13.7x median</div>
+    </div>
+    <div class="val-cell">
+      <div class="val-cell-label">Strat. Premium</div>
+      <div class="val-cell-value positive">474p</div>
+      <div class="val-cell-sub">30% over spot</div>
+    </div>
+  </div>
+</section>
+<hr class="divider">
+
+<!-- INVESTMENT THESIS -->
+<section id="thesis">
+  <div class="section-label">Section 02</div>
+  <h2 class="section-title">Investment Thesis</h2>
+  <p class="section-subtitle">A fundamentally healthy business obscured by demerger mechanics. The balance sheet, not the business, drove the discount.</p>
+  <div class="thesis-grid">
+    <div class="thesis-card">
+      <div class="thesis-card-header resolved">
+        <div class="thesis-card-title">1. Demerger debt load</div>
+        <div class="thesis-badge resolved-badge">Resolved</div>
+      </div>
+      <div class="thesis-card-body">
+        <div class="thesis-problem">GSK and Pfizer loaded Haleon with 4.0x ND/EBITDA at listing to extract value pre-demerger. The business itself was generating £1.5bn+ FCF from day one. The market penalised the equity for the balance sheet, not the fundamentals.</div>
+        <div class="thesis-resolution">Now 2.6x. Target ~1.8x by FY2027E. Funded entirely from operating cash flow: £1.9bn FCF in FY2025, no asset sales, no equity issuance. Investment grade BBB+/A3. At 1.8x the balance sheet headwind is essentially gone.</div>
+      </div>
+    </div>
+    <div class="thesis-card">
+      <div class="thesis-card-header resolved">
+        <div class="thesis-card-title">2. GSK / Pfizer seller overhang</div>
+        <div class="thesis-badge resolved-badge">Resolved</div>
+      </div>
+      <div class="thesis-card-body">
+        <div class="thesis-problem">Combined ~45% stake (~£14bn) held by motivated sellers at listing. Created persistent mechanical supply overhang: price discovery was impaired regardless of business performance or brand fundamentals.</div>
+        <div class="thesis-resolution">Both have largely exited. Float now trades on fundamental merit. Price discovery is clean for the first time since listing.</div>
+      </div>
+    </div>
+    <div class="thesis-card">
+      <div class="thesis-card-header resolved">
+        <div class="thesis-card-title">3. Zantac litigation tail risk</div>
+        <div class="thesis-badge resolved-badge">Resolved</div>
+      </div>
+      <div class="thesis-card-body">
+        <div class="thesis-problem">Potential unquantifiable liability as former GSK subsidiary. RBC Capital cited as primary headwind. Market applied a blanket discount to a business with no direct exposure.</div>
+        <div class="thesis-resolution">US courts dismissed Zantac claims. GSK indemnification covers all pre-demerger exposure. Risk fully de-recognised. Haleon carries no residual liability.</div>
+      </div>
+    </div>
+  </div>
+  <div class="thesis-footer">
+    <strong>The business was healthy throughout:</strong> 64% gross margins, £1.9bn FCF, category leadership in five segments. All three overhangs were balance sheet or technical, not operational. With each now resolved, valuation reflects current earnings. Applying peer median 13.7x to FY2027E EBITDA (£3,312m) implies <strong>456p (+25%)</strong>. No re-rating required.
+  </div>
+</section>
+<hr class="divider">
+
+<!-- COMPANY OVERVIEW -->
+<section id="overview">
+  <div class="section-label">Section 03</div>
+  <h2 class="section-title">Company Overview</h2>
+  <p class="section-subtitle">World's largest pure-play consumer health company — demerged from GSK July 2022</p>
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="kpi-label">Revenue (FY2025A)</div>
+      <div class="kpi-value">£11.0bn</div>
+      <div class="kpi-sub">(1.8)% reported; +3.0% organic</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Adj. EBITDA (FY2025A)</div>
+      <div class="kpi-value">£2,838m</div>
+      <div class="kpi-sub">Margin: 25.7% (mgmt def)</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Free Cash Flow</div>
+      <div class="kpi-value">£1,913m</div>
+      <div class="kpi-sub">FCF margin: 17.3%</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Net Debt / EBITDA</div>
+      <div class="kpi-value">2.6x</div>
+      <div class="kpi-sub">Down from 4.0x at listing</div>
+    </div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Segment</th>
+        <th>Key Brands</th>
+        <th>FY2025 Revenue</th>
+        <th>Organic Growth</th>
+        <th>Investment Note</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="td-bold">Oral Health</td>
+        <td>Sensodyne, parodontax, Aquafresh, Polident</td>
+        <td class="td-mono">£3,461m</td>
+        <td class="td-green">+7.9%</td>
+        <td>#1 sensitivity toothpaste globally. Clinical moat vs private label. Sensodyne +130bps penetration FY2025.</td>
+      </tr>
+      <tr>
+        <td class="td-bold">Pain Relief</td>
+        <td>Panadol, Advil, Voltaren</td>
+        <td class="td-mono">£2,564m</td>
+        <td class="td-green">+2.3%</td>
+        <td>Recurring demand. Non-cyclical. Global OTC staple.</td>
+      </tr>
+      <tr>
+        <td class="td-bold">Respiratory</td>
+        <td>Otrivin, Theraflu</td>
+        <td class="td-mono">£1,873m</td>
+        <td class="td-red">(1.9)%</td>
+        <td>Cyclical miss: weak cold/flu season FY2025. Structural demand intact. Easier comps FY2026.</td>
+      </tr>
+      <tr>
+        <td class="td-bold">VMS</td>
+        <td>Centrum, Caltrate, Emergen-C</td>
+        <td class="td-mono">£1,685m</td>
+        <td style="color: var(--amber); font-weight:600;">+1.9%</td>
+        <td>Post-pandemic normalisation. Below historical +5-8%. Easier comps FY2026, EM tailwind.</td>
+      </tr>
+      <tr>
+        <td class="td-bold">Digestive</td>
+        <td>Tums, Nexium, Benefiber, ENO</td>
+        <td class="td-mono">£987m</td>
+        <td class="td-green">+0.5%</td>
+        <td>Stable. Tums growing. Nexium reclassified to definite life brand.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<hr class="divider">
+
+<!-- FINANCIALS -->
+<section id="financials">
+  <div class="section-label">Section 04</div>
+  <h2 class="section-title">Financial Improvement &amp; Projections</h2>
+  <p class="section-subtitle">Deleverage trajectory and base case projections to FY2030E</p>
+  <div class="two-col" style="margin-bottom:28px;">
+    <div class="chart-placeholder">
+      <div class="chart-header">Net Debt / Adj. EBITDA (x) — Actual and Projected</div>
+      <div class="chart-inner">
+        <div class="deleverage-chart" id="delev-chart"></div>
+        <div style="font-size:11px;color:var(--text-light);margin-top:10px;">Source: Haleon 20-F p.210. Target ~2.5x by FY2026E.</div>
+      </div>
+    </div>
+    <div class="chart-placeholder">
+      <div class="chart-header">Revenue (£m) — FY2023A to FY2030E</div>
+      <div class="chart-inner">
+        <div class="bar-chart" id="rev-chart"></div>
+        <div style="font-size:11px;color:var(--text-light);margin-top:10px;">Projected organic growth: 4.0% FY2026E, 4.5% FY2027E, 5.0% FY2030E</div>
+      </div>
+    </div>
+  </div>
+  <div class="chart-placeholder">
+    <div class="chart-header">Base Case Projections (£m)</div>
+    <div class="chart-inner" style="padding:0;">
+      <table class="proj-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>FY2025A</th>
+            <th style="background:#2D4A6A;">FY2026E</th>
+            <th style="background:#1B5E20;">FY2027E</th>
+            <th>FY2030E</th>
+            <th>5yr CAGR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="td-bold">Revenue (£m)</td><td class="td-mono">11,030</td><td class="td-mono">11,251</td><td class="td-mono">11,757</td><td class="td-mono">13,610</td><td class="td-green td-mono">4.3%</td></tr>
+          <tr><td>Organic growth</td><td class="td-mono">3.0%</td><td class="td-mono">4.0%</td><td class="td-mono">4.5%</td><td class="td-mono">5.0%</td><td class="td-mono">—</td></tr>
+          <tr><td class="td-bold">Adj. EBITDA (£m)</td><td class="td-mono">2,838</td><td class="td-mono">3,096</td><td class="td-mono">3,312</td><td class="td-mono">4,077</td><td class="td-green td-mono">6.4%</td></tr>
+          <tr><td>EBITDA margin</td><td class="td-mono">25.7%</td><td class="td-mono">27.5%</td><td class="td-mono">28.2%</td><td class="td-mono">30.0%</td><td class="td-green td-mono">+290bps</td></tr>
+          <tr><td class="td-bold">FCF (£m)</td><td class="td-mono">1,913</td><td class="td-mono">1,875</td><td class="td-mono">2,021</td><td class="td-mono">2,591</td><td class="td-green td-mono">6.3%</td></tr>
+          <tr><td>Net debt/EBITDA</td><td class="td-mono">2.6x</td><td class="td-mono">2.2x</td><td class="td-mono">1.8x</td><td class="td-mono">1.1x</td><td class="td-mono">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div style="margin-top:16px;padding:14px 18px;background:#EEF4FF;border:1px solid #C3D6F0;border-left:4px solid var(--blue);border-radius:0 2px 2px 0;font-size:12px;color:var(--navy);">
+    <strong>Key driver:</strong> Cost of Sales fell from £4,555m in FY2023 to £3,950m in FY2025 — an absolute reduction of £605m over two years while revenue fell only £272m. Costs fell 2x faster than revenue. This is already in the financial statements, not a forward projection.
+  </div>
+</section>
+<hr class="divider">
+
+<!-- COMPS -->
+<section id="comps">
+  <div class="section-label">Section 05</div>
+  <h2 class="section-title">Comparable Company Analysis</h2>
+  <p class="section-subtitle">Pure-play / near-pure-play OTC consumer health peers. P&G and Colgate excluded: portfolio mismatch.</p>
+  <div class="comps-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Ticker</th>
+          <th>EV/EBITDA</th>
+          <th>P/E Fwd</th>
+          <th>FCF Yield</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="haleon-row">
+          <td class="td-bold">HALEON PLC</td>
+          <td class="td-mono">LON:HLN</td>
+          <td class="td-mono td-bold">14.0x</td>
+          <td class="td-mono">22.0x</td>
+          <td class="td-mono">4.3%</td>
+          <td>Subject company</td>
+        </tr>
+        <tr>
+          <td>Kenvue Inc.</td>
+          <td class="td-mono">NYSE:KVUE</td>
+          <td class="td-mono">13.9x</td>
+          <td class="td-mono">21.5x</td>
+          <td class="td-mono">4.5%</td>
+          <td>Near-pure-play consumer health; closest Haleon comparable</td>
+        </tr>
+        <tr>
+          <td>Reckitt Benckiser</td>
+          <td class="td-mono">LON:RKT</td>
+          <td class="td-mono">13.6x</td>
+          <td class="td-mono">19.2x</td>
+          <td class="td-mono">4.8%</td>
+          <td>Discount reflects Mead Johnson drag</td>
+        </tr>
+        <tr>
+          <td>Church &amp; Dwight</td>
+          <td class="td-mono">NYSE:CHD</td>
+          <td class="td-mono">18.4x</td>
+          <td class="td-mono">23.4x</td>
+          <td class="td-mono">4.2%</td>
+          <td>Higher multiple reflects US household/personal care skew</td>
+        </tr>
+        <tr>
+          <td>Prestige Consumer</td>
+          <td class="td-mono">NYSE:PBH</td>
+          <td class="td-mono">11.5x</td>
+          <td class="td-mono">18.9x</td>
+          <td class="td-mono">5.8%</td>
+          <td>Micro-cap, no EM exposure</td>
+        </tr>
+        <tr style="background:#F8FAFC; font-weight:600;">
+          <td>Peer Average</td><td></td>
+          <td class="td-mono">14.3x</td><td class="td-mono">20.8x</td><td class="td-mono">4.8%</td><td></td>
+        </tr>
+        <tr style="background:#EEF4FF; font-weight:700;">
+          <td>Peer Median</td><td></td>
+          <td class="td-mono" style="color:var(--blue);font-weight:700;">13.7x</td><td class="td-mono">20.4x</td><td class="td-mono">4.7%</td><td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:16px;padding:14px 18px;background:#EEF4FF;border:1px solid #C3D6F0;border-left:4px solid var(--blue);border-radius:0 2px 2px 0;font-size:12px;color:var(--navy);">
+    Haleon at 14.0x is broadly in line with peer median 13.7x. <strong>Applying peer median 13.7x to FY2027E EBITDA £3,312m implies 456p (+25% vs spot).</strong> No multiple re-rating assumed: purely earnings delivery. P&amp;G and Colgate excluded: portfolio mismatch (fabric care, home cleaning, pet nutrition inflate multiples).
+  </div>
+</section>
+<hr class="divider">
+
+<!-- EARNINGS DRIVERS -->
+<section id="drivers">
+  <div class="section-label">Section 06</div>
+  <h2 class="section-title">Earnings Growth Drivers</h2>
+  <p class="section-subtitle">Why EBITDA grows from £2,838m (FY2025A) to £3,312m (FY2027E)</p>
+  <div class="drivers-bridge">
+    <div class="bridge-box start">FY2025A: £2,838m</div>
+    <div class="bridge-arrow">&#8594;</div>
+    <div class="bridge-box delta">+£474m (+17%)</div>
+    <div class="bridge-arrow">&#8594;</div>
+    <div class="bridge-box end">FY2027E: £3,312m</div>
+  </div>
+  <div class="driver-cards">
+    <div class="driver-card primary">
+      <div class="driver-card-header">
+        <div class="driver-card-title">1. Margin expansion</div>
+        <div class="driver-primary-badge">Primary driver</div>
+      </div>
+      <div class="driver-card-body">
+        <ul>
+          <li>Cost of sales fell £605m in FY2023–2025 while revenue fell only £272m. Costs declined 2x faster than revenue. Already visible in reported financials.</li>
+          <li>Gross margin expanded ~350bps in FY2025 alone (59.7% to 64.2%). Adj. EBITDA margin: 25.7% in FY2025A, guided toward 28–30% by FY2030E.</li>
+          <li>£800m supply chain programme tracking ahead of plan. SKU rationalisation, logistics optimisation, manufacturing consolidation. Structural, not cyclical.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="driver-card secondary">
+      <div class="driver-card-header">
+        <div class="driver-card-title">2. Oral Health quality supports margin</div>
+      </div>
+      <div class="driver-card-body">
+        <ul>
+          <li>Oral Health (32% of group revenue) grew 7.9% organically in FY2025, above group average. Highest-margin segment in the portfolio.</li>
+          <li>Despite private label pressure, Sensodyne increased penetration by ~130bps in FY2025, indicating sustained consumer preference and pricing resilience.</li>
+          <li>As Oral Health grows as a share of mix, blended group margin expands mechanically. No new assumptions required.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="driver-card secondary">
+      <div class="driver-card-header">
+        <div class="driver-card-title">3. Growth normalisation</div>
+      </div>
+      <div class="driver-card-body">
+        <ul>
+          <li>FY2025 organic growth of 3% reflected temporary factors: weak US cold/flu season (Respiratory -1.9%) and VMS post-pandemic normalisation (VMS +1.9% vs historical +5–8%).</li>
+          <li>Pre-results consensus stood at 4.4% for FY2026; management guided below, sending shares 6% lower. CEO confirmed FY2027 recovery to 4–6% (Feb 2026).</li>
+          <li>Respiratory and VMS both carry easier comparatives in FY2026. Neither impairment was structural.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="driver-card secondary">
+      <div class="driver-card-header">
+        <div class="driver-card-title">4. Mix and geography</div>
+      </div>
+      <div class="driver-card-body">
+        <ul>
+          <li>APAC delivered +5.2% organic in FY2025, now ~23% of revenue. China recovering from post-COVID destocking; India growing double digits. Structural tailwind, not one-off.</li>
+          <li>Emerging markets growing faster than legacy developed markets. Higher-growth, higher-margin categories (Oral Health, OTC) increasing as share of mix.</li>
+          <li>North America organic -0.4% in FY2025; recovery supported by Sensodyne distribution resets and VMS comp normalisation in H2 FY2026.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:20px;background:var(--navy);padding:16px 22px;border-radius:2px;font-size:13px;color:rgba(255,255,255,0.85);line-height:1.6;">
+    <strong style="color:#fff;">Takeaway:</strong> EBITDA growth from £2,838m to £3,312m is driven primarily by margin expansion already visible in reported financials, supported by cyclical growth normalisation. No heroic assumptions required.
+  </div>
+</section>
+<hr class="divider">
+
+<!-- VALUATION -->
+<section id="valuation">
+  <div class="section-label">Section 07</div>
+  <h2 class="section-title">Valuation: Football Field</h2>
+  <p class="section-subtitle">All methodologies converge. The upside is in earnings delivery, not multiple expansion.</p>
+  <table class="ff-table">
+    <thead>
+      <tr>
+        <th>Methodology</th>
+        <th>Low</th>
+        <th>High</th>
+        <th>Note</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>DCF — Bear (WACC 10.5%)</td><td class="td-mono">233p</td><td class="td-mono">233p</td><td>Conservative; WACC 10.5%, TGR 2.0%</td></tr>
+      <tr><td>DCF — Base (WACC 9.0%)</td><td class="td-mono">326p</td><td class="td-mono">326p</td><td>*Conservative standalone; excludes fwd margin expansion</td></tr>
+      <tr><td>DCF — Bull (WACC 8.0%)</td><td class="td-mono">441p</td><td class="td-mono">441p</td><td>WACC 8.0%, TGR 3.0%</td></tr>
+      <tr><td>Comps EV/EBITDA (current)</td><td class="td-mono">356p</td><td class="td-mono">375p</td><td>Peer median/avg on FY2025A EBITDA — broadly in line with spot</td></tr>
+      <tr><td>Comps EV/EBITDA (forward)</td><td class="td-mono td-bold" style="color:var(--green-light);">456p</td><td class="td-mono td-bold" style="color:var(--green-light);">456p</td><td>Peer median 13.7x on FY2027E EBITDA £3,312m — no re-rating</td></tr>
+      <tr><td>Comps P/E Forward</td><td class="td-mono">380p</td><td class="td-mono">450p</td><td>Cross-check only</td></tr>
+      <tr><td>LBO — Bear floor</td><td class="td-mono">340p</td><td class="td-mono">400p</td><td>Financial sponsor, pessimistic scenario</td></tr>
+      <tr><td>LBO — Base offer</td><td class="td-mono">474p</td><td class="td-mono">530p</td><td>30% premium; strategic acquirer generates 15–20%+ IRR</td></tr>
+      <tr class="ff-target"><td><strong>Price Target</strong></td><td class="td-mono"><strong>440p</strong></td><td class="td-mono"><strong>460p</strong></td><td>Forward earnings delivery; 20–25% upside from 365p</td></tr>
+    </tbody>
+  </table>
+</section>
+<hr class="divider">
+
+<!-- LBO -->
+<section id="lbo">
+  <div class="section-label">Section 08</div>
+  <h2 class="section-title">Strategic Acquisition Optionality</h2>
+  <p class="section-subtitle">A standard PE LBO returns 5% at base. A strategic buyer with synergies generates 15–20%+ IRR at the same entry price.</p>
+  <div class="lbo-grid">
+    <div class="lbo-summary">
+      <div class="lbo-summary-header">Transaction Summary</div>
+      <div class="lbo-summary-row"><span class="lbo-summary-key">Entry price</span><span class="lbo-summary-val">365p</span></div>
+      <div class="lbo-summary-row"><span class="lbo-summary-key">Acquisition premium</span><span class="lbo-summary-val">30%</span></div>
+      <div class="lbo-summary-row"><span class="lbo-summary-key">Offer price</span><span class="lbo-summary-val">474.5p</span></div>
+      <div class="lbo-summary-row"><span class="lbo-summary-key">Shares outstanding</span><span class="lbo-summary-val">8,920m</span></div>
+      <div class="lbo-summary-row"><span class="lbo-summary-key">Equity purchase price</span><span class="lbo-summary-val">£42,325m</span></div>
+      <div class="lbo-summary-row"><span class="lbo-summary-key">Existing net debt</span><span class="lbo-summary-val">£7,263m</span></div>
+      <div class="lbo-summary-row"><span class="lbo-summary-key">Transaction EV</span><span class="lbo-summary-val">£49,588m</span></div>
+      <div class="lbo-summary-row"><span class="lbo-summary-key">Entry EV/EBITDA</span><span class="lbo-summary-val">16.6x*</span></div>
+    </div>
+    <div class="scenario-grid">
+      <div class="scenario-card">
+        <div class="scenario-header bear">Bear</div>
+        <div class="scenario-body">
+          <div class="scenario-row"><span class="scenario-key">Revenue CAGR</span><span class="scenario-val">2.5%</span></div>
+          <div class="scenario-row"><span class="scenario-key">Exit EBITDA margin</span><span class="scenario-val">24.0%</span></div>
+          <div class="scenario-row"><span class="scenario-key">Exit EV/EBITDA</span><span class="scenario-val">12.0x</span></div>
+          <div class="scenario-row"><span class="scenario-key">Exit equity</span><span class="scenario-val">~£9,000m</span></div>
+          <div class="scenario-row"><span class="scenario-key">MoM</span><span class="scenario-val red">0.45x</span></div>
+          <div class="scenario-row"><span class="scenario-key">IRR (5yr)</span><span class="scenario-val red">(15%)</span></div>
+        </div>
+      </div>
+      <div class="scenario-card">
+        <div class="scenario-header base">Base</div>
+        <div class="scenario-body">
+          <div class="scenario-row"><span class="scenario-key">Revenue CAGR</span><span class="scenario-val">4.0%</span></div>
+          <div class="scenario-row"><span class="scenario-key">Exit EBITDA margin</span><span class="scenario-val">27.0%</span></div>
+          <div class="scenario-row"><span class="scenario-key">Exit EV/EBITDA</span><span class="scenario-val">14.5x</span></div>
+          <div class="scenario-row"><span class="scenario-key">Exit equity</span><span class="scenario-val">~£25,580m</span></div>
+          <div class="scenario-row"><span class="scenario-key">MoM</span><span class="scenario-val">1.28x</span></div>
+          <div class="scenario-row"><span class="scenario-key">IRR (5yr)</span><span class="scenario-val">5%</span></div>
+        </div>
+      </div>
+      <div class="scenario-card">
+        <div class="scenario-header bull">Bull</div>
+        <div class="scenario-body">
+          <div class="scenario-row"><span class="scenario-key">Revenue CAGR</span><span class="scenario-val">5.5%</span></div>
+          <div class="scenario-row"><span class="scenario-key">Exit EBITDA margin</span><span class="scenario-val">29.5%</span></div>
+          <div class="scenario-row"><span class="scenario-key">Exit EV/EBITDA</span><span class="scenario-val">17.0x</span></div>
+          <div class="scenario-row"><span class="scenario-key">Exit equity</span><span class="scenario-val">~£45,816m</span></div>
+          <div class="scenario-row"><span class="scenario-key">MoM</span><span class="scenario-val green">2.30x</span></div>
+          <div class="scenario-row"><span class="scenario-key">IRR (5yr)</span><span class="scenario-val green">18%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:16px;font-size:11px;color:var(--text-light);line-height:1.6;">
+    Strategic acquirers: Pfizer (founding partner; consumer health gap; investment grade cost of capital) and Nestle (health/wellness pivot) both credible. Synergies primarily from procurement scale, SG&A overlap, and distribution optimisation. A strategic buyer with £300–500m annual synergies generates 15–20%+ IRR at 474.5p — materially above the financial sponsor base case. *Entry EV/EBITDA 16.6x uses model def. EBITDA £2,986m; on mgmt def. £2,838m the entry multiple is 17.5x.
+  </div>
+</section>
+<hr class="divider">
+
+<!-- RISKS -->
+<section id="risks">
+  <div class="section-label">Section 09</div>
+  <h2 class="section-title">Key Risks and Mitigants</h2>
+  <p class="section-subtitle">Six material risks identified — none fatal to the thesis</p>
+  <table class="risk-table">
+    <thead>
+      <tr>
+        <th>Risk</th>
+        <th>Rating</th>
+        <th>Risk Detail</th>
+        <th>Mitigant</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="td-bold">Organic growth below guidance (4–6%)</td>
+        <td><span class="risk-badge med">MED</span></td>
+        <td>FY2025 delivered only 3% organic. Two consecutive misses would compress the multiple.</td>
+        <td>VMS comps easier in FY2026. Cold/flu miss was seasonal. APAC at 5.2% confirms structural thesis.</td>
+      </tr>
+      <tr>
+        <td class="td-bold">Leverage; refinancing risk</td>
+        <td><span class="risk-badge low">LOW</span></td>
+        <td>Net debt £7.3bn at 2.6x. Rising rates increase refinancing cost on £836m short-term debt.</td>
+        <td>£1.9bn FCF covers £600m paydown + £357m interest with headroom. BBB+/A3 investment grade.</td>
+      </tr>
+      <tr>
+        <td class="td-bold">FX headwind on reported revenue</td>
+        <td><span class="risk-badge low">LOW</span></td>
+        <td>~(2)% FX headwind expected FY2026 from USD/EUR weakness vs GBP.</td>
+        <td>Local cost base provides natural hedge. Organic growth is the correct metric. FX neutral from FY2027E.</td>
+      </tr>
+      <tr>
+        <td class="td-bold">Private label / competitive pressure</td>
+        <td><span class="risk-badge low">LOW</span></td>
+        <td>OTC private label gains share in consumer stress environments.</td>
+        <td>Clinical efficacy protects Sensodyne: 130bps penetration increase FY2025 despite private label growth.</td>
+      </tr>
+      <tr>
+        <td class="td-bold">Regulatory / product liability</td>
+        <td><span class="risk-badge med">MED</span></td>
+        <td>OTC reclassification risk; residual pre-demerger GSK claims.</td>
+        <td>GSK indemnification covers pre-demerger claims. Diversified portfolio (5 categories, 170+ markets).</td>
+      </tr>
+      <tr>
+        <td class="td-bold">Multiple compression / sector rotation</td>
+        <td><span class="risk-badge low">LOW</span></td>
+        <td>Structural risk: Haleon may remain anchored to mid-tier OTC peers if growth and margin expansion fail to converge toward premium consumer health benchmarks.</td>
+        <td>OTC healthcare is non-discretionary. Dividend yield provides floor. LBO floor at 474p limits downside.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- CONCLUSION -->
+<div class="conclusion-section" id="conclusion">
+  <div class="conclusion-inner">
+    <div class="section-label" style="color:rgba(255,255,255,0.4);">Section 10</div>
+    <h2 class="section-title" style="color:#fff;margin-bottom:24px;">Investment Conclusion</h2>
+    <div class="conclusion-rec">
+      <strong>RECOMMENDATION: FORWARD EARNINGS MISPRICING</strong> &nbsp;|&nbsp; Target: 440–460p &nbsp;|&nbsp; Upside: 20–25% from 365p &nbsp;|&nbsp; LBO floor: 474p (30% premium)
+    </div>
+    <div class="conclusion-pillars">
+      <div class="pillar">
+        <div class="pillar-num">1</div>
+        <div class="pillar-title">Category leadership with a defensible moat</div>
+        <div class="pillar-body">Sensodyne, Centrum, Panadol hold #1 or #2 global positions in categories growing at 4–6% p.a. Clinical differentiation vs private label is evidenced over decades.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">2</div>
+        <div class="pillar-title">Deleverage removes the final structural overhang</div>
+        <div class="pillar-body">Net debt/EBITDA: 4.0x (listing) to 2.6x (FY2025A) to ~1.8x (FY2027E). £600m/yr paydown funded by £1.9bn+ annual FCF. At 1.8x, capital return acceleration becomes the catalyst.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">3</div>
+        <div class="pillar-title">Margin expansion is underway and in the data</div>
+        <div class="pillar-body">Gross margin +350bps in FY2025 alone. Cost of sales fell £605m while revenue fell only £272m. £800m supply chain programme tracking ahead of plan. Not a forward projection.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">4</div>
+        <div class="pillar-title">Growth re-acceleration is the consensus miss</div>
+        <div class="pillar-body">FY2025 3% was cyclical. VMS at 1.9% is well below historical. Easier FY2026 comps not priced. CEO confirmed 4–6% recovery for FY2027 (Feb 2026). APAC +5.2% confirms EM thesis.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">5</div>
+        <div class="pillar-title">Acquisition optionality provides a credible floor</div>
+        <div class="pillar-body">A strategic acquirer at 474.5p generates 15–20%+ IRR via synergies and lower cost of capital. Even a financial sponsor produces a positive base case, confirming the stock is not expensively priced.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  HALEON PLC (LON: HLN) &nbsp;|&nbsp; APRIL 2026 &nbsp;|&nbsp; FOR DISCUSSION PURPOSES ONLY
+</footer>
+
+<script>
+  // Revenue bar chart
+  const revData = [
+    {label:'FY23A', val:11302, proj:false},
+    {label:'FY24A', val:11233, proj:false},
+    {label:'FY25A', val:11030, proj:false},
+    {label:'FY26E', val:11251, proj:true},
+    {label:'FY27E', val:11757, proj:true},
+    {label:'FY28E', val:12345, proj:true},
+    {label:'FY29E', val:12962, proj:true},
+    {label:'FY30E', val:13610, proj:true},
+  ];
+  const maxVal = Math.max(...revData.map(d=>d.val));
+  const chartEl = document.getElementById('rev-chart');
+  revData.forEach(d => {
+    const h = Math.round((d.val / maxVal) * 120);
+    const g = document.createElement('div');
+    g.className = 'bar-group';
+    g.innerHTML = `
+      <div class="bar${d.proj?' projected':''}" style="height:${h}px;">
+        <div class="bar-value">${(d.val/1000).toFixed(1)}k</div>
+      </div>
+      <div class="bar-label">${d.label}</div>`;
+    chartEl.appendChild(g);
+  });
+
+  // Deleverage chart
+  const delData = [
+    {label:'FY23A', val:3.0},{label:'FY24A', val:2.8},{label:'FY25A', val:2.6},
+    {label:'FY26E', val:2.2, proj:true},{label:'FY27E', val:1.8, proj:true},{label:'FY28E', val:1.4, proj:true},
+  ];
+  const maxDel = 3.5;
+  const delEl = document.getElementById('delev-chart');
+  delData.forEach(d => {
+    const h = Math.round((d.val / maxDel) * 110);
+    const g = document.createElement('div');
+    g.className = 'bar-group';
+    g.innerHTML = `
+      <div class="bar${d.proj?' projected':''}" style="height:${h}px;background:${d.proj?'#5B8DC4':'#1A2E4A'};">
+        <div class="bar-value">${d.val}x</div>
+      </div>
+      <div class="bar-label">${d.label}</div>`;
+    delEl.appendChild(g);
+  });
+</script>
+</body>
+</html>
